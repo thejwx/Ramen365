@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramen365 | A Daily Ramen Adventure</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item active" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="assets/dishes/tonkotsu.jpg" alt="Today's Ramen" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Tonkotsu Delight</h1>
+        <p class="hero-subtitle">A rich, creamy pork bone broth that's simmered for 12 hours, topped with chashu pork, soft-boiled egg, and green onions.</p>
+        <button class="btn view-recipe-btn">View Full Recipe</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="content-panel">
+        <!-- Context Box -->
+        <section class="context-box">
+        <p class="context-haiku">Milky white broth swirls<br>Pork bones whisper their secrets<br>Comfort in a bowl</p>
+      </section>
+
+      <!-- Tags -->
+      <section class="tags">
+        <span class="tag tag-cuisine"><i class="fas fa-globe"></i> Japanese</span>
+        <span class="tag tag-ingredient"><i class="fas fa-carrot"></i> Pork</span>
+        <span class="tag tag-effort"><i class="fas fa-clock"></i> Medium</span>
+        <span class="tag tag-vibe"><i class="fas fa-music"></i> Cozy</span>
+        <span class="tag tag-vibe"><i class="fas fa-music"></i> Indulgent</span>
+      </section>
+
+      <!-- Action Buttons -->
+      <section class="action-buttons">
+        <button class="btn action-btn" data-action="explore-matrix">Explore Matrix</button>
+        <button class="btn action-btn" data-action="explore-categories">Browse Recipes</button>
+        <button class="btn btn-secondary action-btn" data-action="random-bowl">Random Bowl</button>
+        <button class="btn btn-outline action-btn" data-action="see-challenges">See All Challenges</button>
+      </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- No Footer Navigation -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

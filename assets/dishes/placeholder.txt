@@ -1,0 +1,15 @@
+This directory is for ramen dish images.
+
+Please add your images here with the following filenames:
+- tonkotsu.jpg
+- spicy-miso.jpg
+- coconut-curry.jpg
+- black-garlic.jpg
+- kimchi-cheese.jpg
+- cold-soba.jpg
+- birria-ramen.jpg
+- truffle-mushroom.jpg
+- breakfast-ramen.jpg
+- pho-ramen.jpg
+
+Until you add your own images, the website will display placeholder images.

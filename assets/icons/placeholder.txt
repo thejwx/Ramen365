@@ -1,0 +1,10 @@
+This directory is for UI icons and other visual elements.
+
+You can add custom icons here to enhance the visual design of the website.
+Examples of icons you might want to add:
+- Custom navigation icons
+- Ramen-themed decorative elements
+- Custom tag icons
+- Social media icons
+
+The website currently uses Font Awesome icons by default, but you can replace them with custom icons from this directory.

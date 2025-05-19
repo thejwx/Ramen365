@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe | Ramen365</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item active" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="recipe-container">
+        <div class="recipe-main">
+          <!-- Recipe Header -->
+          <div class="recipe-header">
+            <h1 class="recipe-title">Tonkotsu Delight</h1>
+            <div class="recipe-meta recipe-date-nav">
+              <button class="recipe-nav-btn prev-recipe-btn" title="Previous Recipe" aria-label="Previous Recipe">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <span class="recipe-date">January 14</span>
+              <button class="recipe-nav-btn next-recipe-btn" title="Next Recipe" aria-label="Next Recipe">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Recipe Image -->
+          <img src="assets/dishes/tonkotsu.png" alt="Tonkotsu Ramen" class="recipe-img">
+          
+          <!-- Tags -->
+          <div class="tags">
+            <span class="tag tag-cuisine"><i class="fas fa-globe"></i> Japanese</span>
+            <span class="tag tag-ingredient"><i class="fas fa-carrot"></i> Pork</span>
+            <span class="tag tag-effort"><i class="fas fa-clock"></i> Medium</span>
+            <span class="tag tag-vibe"><i class="fas fa-music"></i> Cozy</span>
+            <span class="tag tag-vibe"><i class="fas fa-music"></i> Indulgent</span>
+          </div>
+          
+          <!-- Recipe Description -->
+          <div class="recipe-section">
+            <p>A rich, creamy pork bone broth that's simmered for 12 hours, topped with chashu pork, soft-boiled egg, and green onions.</p>
+          </div>
+          
+          <!-- Context Box -->
+          <div class="context-box">
+            <p class="context-haiku">Milky white broth swirls<br>Pork bones whisper their secrets<br>Comfort in a bowl</p>
+          </div>
+          
+          <!-- Ingredients -->
+          <div class="recipe-section">
+            <h2 class="recipe-section-title">Ingredients</h2>
+            <ul class="recipe-ingredients">
+              <li>2 pounds pork bones</li>
+              <li>1 onion, halved</li>
+              <li>4 cloves garlic</li>
+              <li>1-inch piece ginger</li>
+              <li>2 tablespoons sesame oil</li>
+              <li>2 tablespoons soy sauce</li>
+              <li>1 tablespoon mirin</li>
+              <li>4 portions ramen noodles</li>
+              <li>4 soft-boiled eggs</li>
+              <li>4 slices chashu pork belly</li>
+              <li>Green onions, sliced</li>
+              <li>Nori sheets</li>
+              <li>Bamboo shoots</li>
+            </ul>
+          </div>
+          
+          <!-- Steps -->
+          <div class="recipe-section">
+            <h2 class="recipe-section-title">Preparation</h2>
+            <ol class="recipe-steps">
+              <li>In a large pot, add pork bones and cover with cold water. Bring to a boil and simmer for 5 minutes.</li>
+              <li>Drain and rinse the bones. Clean the pot.</li>
+              <li>Return bones to the pot with onion, garlic, and ginger. Cover with water and bring to a boil.</li>
+              <li>Reduce heat and simmer for 8-12 hours, skimming regularly.</li>
+              <li>Strain the broth and return to the pot. Add sesame oil, soy sauce, and mirin.</li>
+              <li>Cook ramen noodles according to package instructions.</li>
+              <li>Assemble bowls with noodles, broth, chashu, egg, green onions, nori, and bamboo shoots.</li>
+            </ol>
+          </div>
+        </div>
+        
+        <div class="recipe-sidebar">
+          <!-- Pairings -->
+          <div class="recipe-section">
+            <h2 class="recipe-section-title">Perfect Pairings</h2>
+            <div class="pairing-section">
+              <div class="pairing-item">
+                <div class="pairing-icon"><i class="fas fa-martini-glass-citrus"></i></div>
+                <div class="pairing-content">
+                  <div class="pairing-label">Drink</div>
+                  <div class="pairing-value">Japanese lager beer</div>
+                </div>
+              </div>
+              <div class="pairing-item">
+                <div class="pairing-icon"><i class="fas fa-music"></i></div>
+                <div class="pairing-content">
+                  <div class="pairing-label">Music</div>
+                  <div class="pairing-value">Lo-fi beats</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Topping Suggestions -->
+          <div class="recipe-section">
+            <h2 class="recipe-section-title">Topping Ideas</h2>
+            <ul class="recipe-ingredients">
+              <li>Corn kernels</li>
+              <li>Butter pat</li>
+              <li>Spicy bean sprouts</li>
+              <li>Garlic chips</li>
+              <li>Sesame seeds</li>
+              <li>Chili oil</li>
+            </ul>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="recipe-section">
+            <button class="btn btn-secondary action-btn" data-action="random-bowl">Try Another Bowl</button>
+            <button class="btn btn-outline action-btn" data-action="explore-matrix">Explore Matrix</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-button" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer Navigation Removed -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Scroll to Top Button Logic
+    const scrollBtn = document.querySelector('.scroll-top-button');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // Hide by default
+    scrollBtn.style.display = 'none';
+  </script>
+</body>
+</html>

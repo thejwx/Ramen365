@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Results | Ramen365</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="javascript:history.back()" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+      <div class="content-panel">
+        <h1 class="page-title">Filtered Results</h1>
+        
+        <!-- Dish Grid -->
+      <div class="dish-grid">
+        <!-- This will be populated by JavaScript -->
+        <div class="dish-card">
+          <img src="assets/dishes/tonkotsu.jpg" alt="Tonkotsu Delight" class="dish-img">
+          <div class="dish-content">
+            <h3 class="dish-title">Tonkotsu Delight</h3>
+            <p class="dish-desc">A rich, creamy pork bone broth that's simmered for 12 hours, topped with chashu pork, soft-boiled egg, and green onions.</p>
+            <div class="tags">
+              <span class="tag tag-cuisine"><i class="fas fa-globe"></i> Japanese</span>
+              <span class="tag tag-ingredient"><i class="fas fa-carrot"></i> Pork</span>
+            </div>
+            <button class="btn view-recipe-btn" data-id="1">View Recipe</button>
+          </div>
+        </div>
+        
+        <div class="dish-card">
+          <img src="assets/dishes/spicy-miso.jpg" alt="Spicy Miso Veggie Explosion" class="dish-img">
+          <div class="dish-content">
+            <h3 class="dish-title">Spicy Miso Veggie Explosion</h3>
+            <p class="dish-desc">A vibrant vegetable-packed ramen with a spicy miso broth that will wake up your taste buds.</p>
+            <div class="tags">
+              <span class="tag tag-cuisine"><i class="fas fa-globe"></i> Japanese Fusion</span>
+              <span class="tag tag-ingredient"><i class="fas fa-carrot"></i> Vegetables</span>
+            </div>
+            <button class="btn view-recipe-btn" data-id="2">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="no-results" style="display: none;">
+        <p>No recipes found matching your criteria. Try a different selection.</p>
+        <button class="btn btn-secondary action-btn" data-action="explore-matrix">Return to Matrix</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- Footer Navigation Removed -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize filtered page when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      initFilteredPage();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges | Ramen365</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item active" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-panel">
+        <h1>Ramen Challenges</h1>
+        <p class="page-description">Explore our curated collections of themed ramen recipes. Each challenge offers a unique culinary adventure.</p>
+        
+        <!-- Challenge Grid -->
+      <div class="challenge-grid">
+        <!-- This will be populated by JavaScript -->
+        <div class="challenge-card">
+          <img src="assets/challenges/cold-challenge.jpg" alt="Cold Ramen Week" class="challenge-img">
+          <div class="challenge-content">
+            <h3 class="challenge-title">Cold Ramen Week</h3>
+            <p class="challenge-desc">Beat the heat with refreshing cold ramen variations perfect for summer days.</p>
+            <div class="challenge-count">1 Recipe</div>
+            <button class="btn btn-secondary view-challenge-btn" data-id="1">View Challenge</button>
+          </div>
+        </div>
+        
+        <div class="challenge-card">
+          <img src="assets/challenges/fusion-challenge.jpg" alt="Fusion Explosion" class="challenge-img">
+          <div class="challenge-content">
+            <h3 class="challenge-title">Fusion Explosion</h3>
+            <p class="challenge-desc">Experience boundary-pushing ramen that combines culinary traditions from around the world.</p>
+            <div class="challenge-count">5 Recipes</div>
+            <button class="btn btn-secondary view-challenge-btn" data-id="2">View Challenge</button>
+          </div>
+        </div>
+        
+        <div class="challenge-card">
+          <img src="assets/challenges/mushroom-challenge.jpg" alt="Mushroom March" class="challenge-img">
+          <div class="challenge-content">
+            <h3 class="challenge-title">Mushroom March</h3>
+            <p class="challenge-desc">Celebrate the earthy, umami goodness of mushrooms in these fungi-focused ramen bowls.</p>
+            <div class="challenge-count">1 Recipe</div>
+            <button class="btn btn-secondary view-challenge-btn" data-id="3">View Challenge</button>
+          </div>
+        </div>
+        
+        <div class="challenge-card">
+          <img src="assets/challenges/spice-challenge.jpg" alt="Spice Journey" class="challenge-img">
+          <div class="challenge-content">
+            <h3 class="challenge-title">Spice Journey</h3>
+            <p class="challenge-desc">Turn up the heat with these spicy ramen variations that will make you sweat in the best way.</p>
+            <div class="challenge-count">3 Recipes</div>
+            <button class="btn btn-secondary view-challenge-btn" data-id="4">View Challenge</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="challenges-info">
+        <h3>About Challenges</h3>
+        <p>Challenges are curated collections of ramen recipes that share a theme, ingredient, or cooking technique. They're designed to inspire your culinary creativity and expand your ramen horizons.</p>
+        <p>New challenges are added regularly, so check back often for fresh inspiration!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- Footer Navigation Removed -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

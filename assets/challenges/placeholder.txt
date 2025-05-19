@@ -1,0 +1,9 @@
+This directory is for challenge collection images.
+
+Please add your images here with the following filenames:
+- cold-challenge.jpg
+- fusion-challenge.jpg
+- mushroom-challenge.jpg
+- spice-challenge.jpg
+
+Until you add your own images, the website will display placeholder images.

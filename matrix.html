@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Explorer | Ramen365</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item active" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-panel">
+        <h1>Matrix Explorer</h1>
+        <p class="page-description">Discover ramen combinations by cuisine and main ingredient. Click on a cell to explore recipes.</p>
+        
+        <!-- Matrix Grid -->
+      <div class="matrix-container">
+        <div class="matrix-grid">
+          <!-- This will be populated by JavaScript -->
+          <div class="matrix-header"></div>
+          <div class="matrix-header">Japanese</div>
+          <div class="matrix-header">Korean</div>
+          <div class="matrix-header">Thai</div>
+          <div class="matrix-header">Mexican</div>
+          <div class="matrix-header">Italian</div>
+          <div class="matrix-header">Vietnamese</div>
+          <div class="matrix-header">American</div>
+          
+          <div class="matrix-header">Pork</div>
+          <div class="matrix-cell"><span class="matrix-cell-count">1/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          
+          <div class="matrix-header">Chicken</div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">1/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          <div class="matrix-cell"><span class="matrix-cell-count">0/10</span></div>
+          
+          <!-- More rows will be populated by JavaScript -->
+        </div>
+      </div>
+      
+      <div class="matrix-legend">
+        <p><strong>How to use:</strong> Click on any cell to see all ramen recipes that match that cuisine and ingredient combination.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- No Footer Navigation -->
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

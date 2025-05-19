@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Recipes | Ramen365</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-container">
+          <div class="logo">Ramen365</div>
+          <img src="assets/icons/logo.png" alt="Ramen365 Logo" class="logo-image">
+        </div>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item" data-page="home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item" data-page="matrix">
+          <i class="fas fa-th"></i>
+          <span>Matrix</span>
+        </div>
+        <div class="nav-item" data-page="categories">
+          <i class="fas fa-list"></i>
+          <span>Browse Recipes</span>
+        </div>
+        <div class="nav-item" data-page="challenges">
+          <i class="fas fa-trophy"></i>
+          <span>Challenges</span>
+        </div>
+        <div class="nav-item" data-page="saved">
+          <i class="fas fa-bookmark"></i>
+          <span>Saved</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-panel">
+        <h1>Browse Recipes</h1>
+        <p class="page-description"></p>
+        
+        <!-- Filter Section -->
+        <div class="filter-section">
+          <div class="filter-header">
+            <div class="filter-title-container">
+              <h2>Filter By:</h2>
+              <p class="no-filters-message">All Recipes Shown</p>
+              <!-- Selected Filters (shown when collapsed, inline with Filter By) -->
+              <div class="selected-filters-inline">
+                <!-- Will be dynamically populated with selected filter tags -->
+              </div>
+            </div>
+            <div class="filter-controls">
+              <a href="#" class="filter-toggle clear-all-btn" id="clear-all-filters" style="display: none;">Clear All</a>
+              <a href="#" class="filter-toggle" id="collapse-filters">Collapse</a>
+              <a href="#" class="filter-toggle" id="expand-filters" style="display: none;">Filter</a>
+            </div>
+          </div>
+          
+          <!-- All Filters (shown when expanded) -->
+          <div class="filter-container">
+            <div class="filter-column">
+              <h3>Cuisines</h3>
+              <div class="filter-tags cuisine-filters">
+                <!-- Will be dynamically populated with cuisine filter tags -->
+              </div>
+            </div>
+            <div class="filter-column">
+              <h3>Main Ingredients</h3>
+              <div class="filter-tags ingredient-filters">
+                <!-- Will be dynamically populated with ingredient filter tags -->
+              </div>
+            </div>
+            <div class="filter-column">
+              <h3>Categories</h3>
+              <div class="filter-tags category-filters">
+                <!-- Will be dynamically populated with category filter tags -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Results Counter -->
+        <div class="results-counter"></div>
+        
+        <!-- Dishes Section -->
+        <div class="dishes-container">
+          <!-- Will be dynamically populated by JavaScript based on filters -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Random Button -->
+  <div class="random-button">
+    <i class="fas fa-random"></i>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-button" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize categories page when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      initCategoriesPage();
+    });
+    // Scroll to Top Button Logic
+    const scrollBtn = document.querySelector('.scroll-top-button');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // Hide by default
+    scrollBtn.style.display = 'none';
+  </script>
+</body>
+</html>
