@@ -48,3 +48,5 @@ yarn-error.log*
 .eslintcache
 .stylelintcache
 .cache/
+# Project specific
+SERVER_INSTRUCTIONS.md
